@@ -151,25 +151,25 @@ const RegistrationForm: React.FC = () => {
           </h2>
           <div className="flex justify-center items-center gap-4 mb-4">
             <Link
-              to="/facebook"
+              to="https://web.facebook.com/profile.php?id=61559591504423"
               className="p-3 rounded-full border hover:border-[#5f0407] hover:shadow transition"
             >
               <FaFacebookF className="text-xl" color="#5f0407" />
             </Link>
             <Link
-              to="/instagram"
+              to="https://www.instagram.com/winesandthingslimited/"
               className="p-3 rounded-full border hover:border-[#5f0407] hover:shadow transition"
             >
               <FaInstagram className="text-xl" color="#5f0407" />
             </Link>
             <Link
-              to="/twitter"
+              to="https://x.com/winesandthings"
               className="p-3 rounded-full border hover:border-[#5f0407] hover:shadow transition"
             >
               <FaXTwitter className="text-xl" color="#5f0407" />
             </Link>
             <Link
-              to="/tiktok"
+              to="https://www.tiktok.com/@winesandthings"
               className="p-3 rounded-full border hover:border-[#5f0407] hover:shadow transition"
             >
               <FaTiktok className="text-xl" color="#5f0407" />

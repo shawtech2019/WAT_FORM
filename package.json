@@ -6,7 +6,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "npm install && npm install --prefix clients && npm run build --prefix clients"
   },
   "dependencies": {
     "cors": "^2.8.5",
