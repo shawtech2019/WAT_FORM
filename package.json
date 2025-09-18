@@ -2,11 +2,11 @@
   "name": "server",
   "version": "1.0.0",
   "description": "registration form",
-    "type": "module",
-  "main": "server.js",
+  "type": "module",
+  "main": "server/server.js",
   "scripts": {
-    "start": "node app/server.js",
-    "dev": "nodemon app/server.js",
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
     "build": "npm install && npm install --prefix clients && npm run build --prefix clients"
   },
   "dependencies": {
@@ -18,5 +18,4 @@
   "devDependencies": {
     "nodemon": "^3.1.0"
   }
-  
 }
