@@ -40,10 +40,12 @@ const RegistrationForm: React.FC = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post(
-        "http://localhost:9000/api/register",
-        formData
-      );
+      // const response = await axios.post(
+      //   "http://localhost:9000/api/register",
+      //   formData
+      // );
+      const response = await axios.post("/api/register", formData);
+
 
       console.log("✅ Registration successful:", response.data);
 
@@ -157,7 +159,7 @@ const RegistrationForm: React.FC = () => {
               <FaFacebookF className="text-xl" color="#5f0407" />
             </Link>
             <Link
-              to="https://www.instagram.com/winesandthingslimited/"
+              to="https://www.instagram.com/winesandthingslimited/§"
               className="p-3 rounded-full border hover:border-[#5f0407] hover:shadow transition"
             >
               <FaInstagram className="text-xl" color="#5f0407" />
