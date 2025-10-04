@@ -15,13 +15,13 @@ const __dirname = path.dirname(__filename);
 app.use(cors());
 app.use(bodyParser.json());
 
-// ✅ API Routes
+// API Routes
 app.use("/api/register", registrationRoutes);
 
-// ✅ Serve frontend (React/Vite build)
+//  Serve frontend (React/Vite build)
 app.use(express.static(path.join(__dirname, "../clients/dist")));
 
-// ✅ Catch-all to handle React Router paths
+// Catch-all to handle React Router paths
 app.get("*", (req, res) => {
     
   res.sendFile(path.join(__dirname, "../clients/dist/index.html"));

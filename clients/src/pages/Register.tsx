@@ -44,12 +44,14 @@ const RegistrationForm: React.FC = () => {
       //   "http://localhost:9000/api/register",
       //   formData
       // );
-      const response = await axios.post("/api/register", formData);
+      // const response = await axios.post("/api/register", formData);
+      const response = await axios.post("http://localhost:9000/api/register", formData);
 
 
-      console.log("✅ Registration successful:", response.data);
 
-      toast.success("Registration successful! 🎉");
+      console.log("Registration successful:", response.data);
+
+      toast.success("Registration successful! ");
       setSubmitted(true);
     } catch (error) {
       console.error("Error submitting registration:", error);
