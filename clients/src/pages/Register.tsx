@@ -44,8 +44,8 @@ const RegistrationForm: React.FC = () => {
       //   "http://localhost:9000/api/register",
       //   formData
       // );
-      // const response = await axios.post("/api/register", formData);
-      const response = await axios.post("http://localhost:9000/api/register", formData);
+      const response = await axios.post("/api/register", formData);
+      // const response = await axios.post("http://localhost:9000/api/register", formData);
 
 
 
